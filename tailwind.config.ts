@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1781596771855447835.html"
 	],
 	prefix: "",
 	theme: {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Rubik', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -70,25 +74,45 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'pop': {
+					'0%': { transform: 'scale(1)' },
+					'40%': { transform: 'scale(0.88)' },
+					'100%': { transform: 'scale(1)' }
+				},
+				'float-up': {
+					'0%': { transform: 'translateY(0) scale(1)', opacity: '1' },
+					'100%': { transform: 'translateY(-120px) scale(1.6)', opacity: '0' }
+				},
+				'shake': {
+					'0%,100%': { transform: 'translateX(0)' },
+					'25%': { transform: 'translateX(-6px) rotate(-2deg)' },
+					'75%': { transform: 'translateX(6px) rotate(2deg)' }
+				},
+				'glow-pulse': {
+					'0%,100%': { opacity: '0.5', transform: 'scale(1)' },
+					'50%': { opacity: '0.9', transform: 'scale(1.08)' }
+				},
+				'badge-in': {
+					'0%': { transform: 'scale(0.5) translateY(20px)', opacity: '0' },
+					'60%': { transform: 'scale(1.1)' },
+					'100%': { transform: 'scale(1) translateY(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pop': 'pop 0.25s ease-out',
+				'float-up': 'float-up 0.9s ease-out forwards',
+				'shake': 'shake 0.4s ease-in-out',
+				'glow-pulse': 'glow-pulse 3s ease-in-out infinite',
+				'badge-in': 'badge-in 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards'
 			}
 		}
 	},
