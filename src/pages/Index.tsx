@@ -8,11 +8,10 @@ import {
   getNextLevel,
 } from '@/lib/gameData';
 import {
-  playClick,
+  playMemeClick,
   playLevelUp,
   playAchievement,
   setMuted,
-  isMuted,
 } from '@/lib/sounds';
 
 interface FloatingScore {
@@ -92,7 +91,7 @@ const Index = () => {
 
   const handleClick = useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {
-      playClick();
+      playMemeClick(level.level);
       setScore((s) => s + level.power);
       setClicks((c) => c + 1);
       setPop(true);

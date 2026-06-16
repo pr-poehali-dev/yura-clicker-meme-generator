@@ -41,6 +41,41 @@ export function playClick() {
   tone(f, 0.12, 'triangle', 0.18);
 }
 
+function rand(arr: number[]) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+export function playMemeClick(level: number) {
+  switch (level) {
+    case 1:
+      // Котик — нежное "мяу"
+      tone(rand([660, 700, 740]), 0.1, 'sine', 0.16);
+      tone(rand([480, 520]), 0.14, 'sine', 0.1, 0.06);
+      break;
+    case 2:
+      // Дож — низкий уверенный "вуф"
+      tone(rand([200, 230, 260]), 0.16, 'sawtooth', 0.16);
+      break;
+    case 3:
+      // Лягуха — упругое "квак"
+      tone(rand([340, 380]), 0.06, 'square', 0.15);
+      tone(rand([180, 210]), 0.12, 'square', 0.14, 0.05);
+      break;
+    case 4:
+      // Чимс — мощный бас-удар
+      tone(rand([110, 130, 150]), 0.2, 'sawtooth', 0.2);
+      tone(rand([220, 260]), 0.1, 'square', 0.1, 0.02);
+      break;
+    case 5:
+      // Космо-кот — звёздный "бип-бип"
+      tone(rand([880, 990]), 0.08, 'triangle', 0.16);
+      tone(rand([1180, 1320, 1480]), 0.16, 'triangle', 0.16, 0.07);
+      break;
+    default:
+      playClick();
+  }
+}
+
 export function playLevelUp() {
   tone(523, 0.15, 'square', 0.15, 0);
   tone(659, 0.15, 'square', 0.15, 0.1);
