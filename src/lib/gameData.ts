@@ -42,6 +42,41 @@ export const LEVELS: Level[] = [
     threshold: 1500,
     power: 15,
   },
+  {
+    level: 6,
+    name: 'Сова в шоке',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/c35c0261-0e33-455e-9774-571535bdad30.jpg',
+    threshold: 3000,
+    power: 25,
+  },
+  {
+    level: 7,
+    name: 'Чилл Капибара',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/a43f5815-73a0-4a0a-8a6b-55a6a08f62a3.jpg',
+    threshold: 6000,
+    power: 40,
+  },
+  {
+    level: 8,
+    name: 'Плачу-смеюсь 💀',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/e4c11ebc-b6e5-453d-9226-5b5ac9ce5873.jpg',
+    threshold: 12000,
+    power: 65,
+  },
+  {
+    level: 9,
+    name: 'GIGA CHAD',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/202ff3f1-80ee-462f-b002-42aaa6fa6e8d.jpg',
+    threshold: 25000,
+    power: 100,
+  },
+  {
+    level: 10,
+    name: 'SKIBIDI TOILET БОГ',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/b75d88d3-5580-4f48-bd26-6750fa6a55ae.jpg',
+    threshold: 50000,
+    power: 180,
+  },
 ];
 
 export function getLevelForScore(score: number): Level {
@@ -80,4 +115,9 @@ export const ACHIEVEMENTS: Achievement[] = [
   { id: 'lvl3', name: 'Качок', desc: 'Достигни 3 уровня', icon: 'Dumbbell', check: (s) => s.level >= 3 },
   { id: 'lvl5', name: 'ЛЕГЕНДА', desc: 'Достигни 5 уровня', icon: 'Rocket', check: (s) => s.level >= 5 },
   { id: 'score1500', name: 'Мем-бог', desc: '1500 очков', icon: 'Crown', check: (s) => s.score >= 1500 },
+  { id: 'click1000', name: 'Кликер-маньяк', desc: '1000 кликов', icon: 'MousePointer2', check: (s) => s.clicks >= 1000 },
+  { id: 'lvl7', name: 'Чилл-мастер', desc: 'Достигни 7 уровня', icon: 'Headphones', check: (s) => s.level >= 7 },
+  { id: 'lvl9', name: 'GIGA CHAD', desc: 'Достигни 9 уровня', icon: 'Shield', check: (s) => s.level >= 9 },
+  { id: 'lvl10', name: 'SKIBIDI БОГ', desc: 'Достигни 10 уровня', icon: 'Sparkles', check: (s) => s.level >= 10 },
+  { id: 'score50000', name: 'Мем-Вселенная', desc: '50 000 очков', icon: 'Infinity', check: (s) => s.score >= 50000 },
 ];

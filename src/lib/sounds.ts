@@ -71,6 +71,35 @@ export function playMemeClick(level: number) {
       tone(rand([880, 990]), 0.08, 'triangle', 0.16);
       tone(rand([1180, 1320, 1480]), 0.16, 'triangle', 0.16, 0.07);
       break;
+    case 6:
+      // Сова в шоке — резкий вскрик "вух!"
+      tone(rand([1400, 1600, 1800]), 0.05, 'sawtooth', 0.18);
+      tone(rand([600, 700]), 0.18, 'sine', 0.12, 0.04);
+      break;
+    case 7:
+      // Чилл Капибара — медитативный lo-fi бас
+      tone(rand([80, 90, 100]), 0.25, 'sine', 0.2);
+      tone(rand([160, 180]), 0.15, 'triangle', 0.1, 0.1);
+      break;
+    case 8:
+      // Плачу-смеюсь — хаотичный глитч
+      tone(rand([440, 550, 660]), 0.04, 'square', 0.15);
+      tone(rand([330, 280, 220]), 0.04, 'square', 0.15, 0.05);
+      tone(rand([880, 770]), 0.1, 'sawtooth', 0.1, 0.09);
+      break;
+    case 9:
+      // GIGA CHAD — эпичный низкий удар
+      tone(rand([60, 70, 80]), 0.3, 'sawtooth', 0.22);
+      tone(rand([300, 350]), 0.08, 'square', 0.12, 0.03);
+      tone(rand([600, 700]), 0.06, 'triangle', 0.1, 0.08);
+      break;
+    case 10:
+      // SKIBIDI TOILET — безумный рингтон
+      tone(880, 0.06, 'square', 0.16, 0);
+      tone(1100, 0.06, 'square', 0.16, 0.07);
+      tone(880, 0.06, 'square', 0.16, 0.14);
+      tone(1320, 0.12, 'triangle', 0.18, 0.21);
+      break;
     default:
       playClick();
   }
