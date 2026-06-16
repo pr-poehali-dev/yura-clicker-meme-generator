@@ -126,6 +126,67 @@ export function playMemeClick(level: number) {
       tone(784, 0.08, 'triangle', 0.18, 0.14);
       tone(1046, 0.2, 'sine', 0.2, 0.21);
       break;
+    case 15:
+      // Шокированный Пикачу — удивлённый писк
+      tone(rand([1200, 1400]), 0.04, 'sine', 0.18);
+      tone(rand([600, 700]), 0.08, 'triangle', 0.15, 0.04);
+      tone(rand([900, 1000]), 0.12, 'sine', 0.12, 0.1);
+      break;
+    case 16:
+      // Отвлёкся — скользящий глиссандо
+      tone(rand([500, 600]), 0.18, 'sine', 0.16);
+      tone(rand([300, 350]), 0.1, 'triangle', 0.12, 0.08);
+      break;
+    case 17:
+      // Взрыв мозга — нарастающий хаос
+      tone(rand([200, 300]), 0.05, 'sawtooth', 0.15);
+      tone(rand([600, 800]), 0.05, 'sawtooth', 0.15, 0.05);
+      tone(rand([1000, 1400]), 0.05, 'sawtooth', 0.15, 0.1);
+      tone(rand([1800, 2000]), 0.1, 'sawtooth', 0.15, 0.15);
+      break;
+    case 18:
+      // STONKS — восходящий звук роста
+      tone(330, 0.07, 'triangle', 0.16, 0);
+      tone(440, 0.07, 'triangle', 0.16, 0.06);
+      tone(550, 0.07, 'triangle', 0.16, 0.12);
+      tone(660, 0.15, 'triangle', 0.2, 0.18);
+      break;
+    case 19:
+      // Кот говорит НЕТ — резкий отказ
+      tone(rand([150, 180]), 0.05, 'sawtooth', 0.2);
+      tone(rand([100, 130]), 0.15, 'sawtooth', 0.18, 0.05);
+      break;
+    case 20:
+      // Chad vs Virgin — эпичный дуэт
+      tone(rand([80, 90]), 0.2, 'sawtooth', 0.2);
+      tone(rand([1200, 1400]), 0.08, 'square', 0.16, 0.05);
+      tone(rand([600, 700]), 0.12, 'triangle', 0.14, 0.12);
+      break;
+    case 21:
+      // Бафф Губка Боб — подводный удар
+      tone(rand([200, 240]), 0.06, 'sine', 0.18);
+      tone(rand([400, 500]), 0.1, 'triangle', 0.16, 0.05);
+      tone(rand([800, 900]), 0.2, 'sine', 0.14, 0.1);
+      break;
+    case 22:
+      // Always Has Been — космический синтез
+      tone(rand([440, 480]), 0.06, 'triangle', 0.14);
+      tone(rand([880, 960]), 0.06, 'triangle', 0.14, 0.06);
+      tone(rand([1320, 1440]), 0.14, 'sine', 0.18, 0.12);
+      break;
+    case 23:
+      // This is Fine — спокойный трагичный звук
+      tone(rand([300, 340]), 0.2, 'sine', 0.16);
+      tone(rand([280, 320]), 0.2, 'sine', 0.12, 0.1);
+      break;
+    case 24:
+      // GALAXY BRAIN — финальный космический взрыв
+      tone(60, 0.1, 'sawtooth', 0.2, 0);
+      tone(523, 0.08, 'square', 0.16, 0.05);
+      tone(1046, 0.08, 'square', 0.16, 0.12);
+      tone(2093, 0.06, 'triangle', 0.18, 0.18);
+      tone(rand([880, 990, 1100]), 0.25, 'sine', 0.2, 0.22);
+      break;
     default:
       playClick();
   }
