@@ -187,6 +187,46 @@ export function playMemeClick(level: number) {
       tone(2093, 0.06, 'triangle', 0.18, 0.18);
       tone(rand([880, 990, 1100]), 0.25, 'sine', 0.2, 0.22);
       break;
+    case 25:
+      // Черемша танцует — весёлый хруст-шелест
+      tone(rand([900, 1000, 1100]), 0.05, 'sine', 0.14);
+      tone(rand([700, 800]), 0.07, 'triangle', 0.12, 0.05);
+      tone(rand([500, 600]), 0.1, 'sine', 0.14, 0.1);
+      break;
+    case 26:
+      // Черемша в очках — свэгерный хруст
+      tone(rand([300, 350]), 0.04, 'square', 0.15);
+      tone(rand([600, 700]), 0.06, 'triangle', 0.15, 0.04);
+      tone(rand([1200, 1400]), 0.08, 'sine', 0.12, 0.09);
+      break;
+    case 27:
+      // Черемша-КОРОЛЬ — торжественный марш
+      tone(392, 0.08, 'triangle', 0.18, 0);
+      tone(523, 0.08, 'triangle', 0.18, 0.08);
+      tone(659, 0.08, 'triangle', 0.18, 0.16);
+      tone(784, 0.2, 'sine', 0.22, 0.24);
+      break;
+    case 28:
+      // Газан на сцене — рэп-бит удар
+      tone(rand([70, 80]), 0.15, 'sawtooth', 0.22);
+      tone(rand([500, 600]), 0.05, 'square', 0.14, 0.05);
+      tone(rand([1000, 1200]), 0.06, 'triangle', 0.12, 0.1);
+      break;
+    case 29:
+      // Газан Thug Life — золотые цепи звенят
+      tone(rand([400, 500]), 0.04, 'triangle', 0.18);
+      tone(rand([600, 700]), 0.04, 'triangle', 0.18, 0.04);
+      tone(rand([80, 90]), 0.2, 'sawtooth', 0.2, 0.07);
+      tone(rand([1400, 1600]), 0.05, 'square', 0.14, 0.12);
+      break;
+    case 30:
+      // ГАЗАН ОГОНЬ — финал с огнём и баттлом
+      tone(rand([60, 70]), 0.08, 'sawtooth', 0.22, 0);
+      tone(rand([440, 520]), 0.06, 'square', 0.18, 0.05);
+      tone(rand([880, 1000]), 0.06, 'square', 0.18, 0.11);
+      tone(rand([1760, 2000]), 0.08, 'triangle', 0.2, 0.17);
+      tone(rand([300, 400]), 0.2, 'sine', 0.16, 0.24);
+      break;
     default:
       playClick();
   }

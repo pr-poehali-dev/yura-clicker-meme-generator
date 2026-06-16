@@ -175,6 +175,48 @@ export const LEVELS: Level[] = [
     threshold: 1000000000,
     power: 150000,
   },
+  {
+    level: 25,
+    name: 'Черемша Танцует 🌿',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/d861f16a-47ca-4064-8be7-c68bacb6d094.jpg',
+    threshold: 2000000000,
+    power: 250000,
+  },
+  {
+    level: 26,
+    name: 'Черемша в Очках 😎',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/9fd8f799-d007-4e9b-a9e4-42f7e42b58dd.jpg',
+    threshold: 5000000000,
+    power: 400000,
+  },
+  {
+    level: 27,
+    name: 'Черемша — КОРОЛЬ 👑',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/c33c6f09-24a7-4002-a2a9-3f54962820a9.jpg',
+    threshold: 10000000000,
+    power: 700000,
+  },
+  {
+    level: 28,
+    name: 'Газан на сцене 🎤',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/d32772d5-58aa-4fca-92d9-b6c477df5691.jpg',
+    threshold: 25000000000,
+    power: 1200000,
+  },
+  {
+    level: 29,
+    name: 'Газан — Thug Life 💰',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/5f6a170e-e6a1-4f2f-84bc-e7cc7a784c35.jpg',
+    threshold: 60000000000,
+    power: 2000000,
+  },
+  {
+    level: 30,
+    name: 'ГАЗАН ОГОНЬ 🔥🎤',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/c20f714d-0145-4b43-ab7b-58deb7e93901.jpg',
+    threshold: 150000000000,
+    power: 3500000,
+  },
 ];
 
 export function getLevelForScore(score: number): Level {
@@ -231,4 +273,9 @@ export const ACHIEVEMENTS: Achievement[] = [
   { id: 'lvl24', name: 'GALAXY BRAIN', desc: 'Достигни 24 уровня', icon: 'Atom', check: (s) => s.level >= 24 },
   { id: 'click10000', name: 'КЛИКЕР БОГ', desc: '10 000 кликов', icon: 'Fingerprint', check: (s) => s.clicks >= 10000 },
   { id: 'score1b', name: 'МИЛЛИАРДЕР', desc: '1 000 000 000 очков', icon: 'Banknote', check: (s) => s.score >= 1000000000 },
+  { id: 'lvl25', name: 'Черемша!', desc: 'Достигни 25 уровня', icon: 'Leaf', check: (s) => s.level >= 25 },
+  { id: 'lvl27', name: 'Черемша-КОРОЛЬ', desc: 'Достигни 27 уровня', icon: 'Crown', check: (s) => s.level >= 27 },
+  { id: 'lvl28', name: 'Газан на сцене', desc: 'Достигни 28 уровня', icon: 'Mic', check: (s) => s.level >= 28 },
+  { id: 'lvl30', name: 'ГАЗАН ОГОНЬ', desc: 'Достигни 30 уровня', icon: 'Flame', check: (s) => s.level >= 30 },
+  { id: 'score150b', name: 'МЕМ-ГАЛАКТИКА', desc: '150 млрд очков', icon: 'Galaxy', check: (s) => s.score >= 150000000000 },
 ];
