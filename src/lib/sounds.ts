@@ -100,6 +100,32 @@ export function playMemeClick(level: number) {
       tone(880, 0.06, 'square', 0.16, 0.14);
       tone(1320, 0.12, 'triangle', 0.18, 0.21);
       break;
+    case 11:
+      // Брат 67 — рэп-удар, свэг
+      tone(rand([80, 90]), 0.12, 'sawtooth', 0.2);
+      tone(rand([440, 480]), 0.07, 'square', 0.14, 0.06);
+      tone(rand([660, 720]), 0.05, 'triangle', 0.1, 0.12);
+      break;
+    case 12:
+      // Братишка 52 — шок и непонимание
+      tone(rand([1600, 1800]), 0.04, 'sawtooth', 0.17);
+      tone(rand([400, 450]), 0.1, 'sine', 0.13, 0.05);
+      tone(rand([200, 240]), 0.15, 'triangle', 0.1, 0.1);
+      break;
+    case 13:
+      // SKIBIDI УЛЬТРА — двойной взрыв
+      tone(rand([60, 70]), 0.15, 'sawtooth', 0.22);
+      tone(rand([880, 990]), 0.06, 'square', 0.16, 0.03);
+      tone(rand([1320, 1540]), 0.06, 'square', 0.16, 0.1);
+      tone(rand([440, 550]), 0.12, 'triangle', 0.12, 0.16);
+      break;
+    case 14:
+      // Села и дала — победный королевский звук
+      tone(523, 0.08, 'triangle', 0.18, 0);
+      tone(659, 0.08, 'triangle', 0.18, 0.07);
+      tone(784, 0.08, 'triangle', 0.18, 0.14);
+      tone(1046, 0.2, 'sine', 0.2, 0.21);
+      break;
     default:
       playClick();
   }

@@ -77,6 +77,34 @@ export const LEVELS: Level[] = [
     threshold: 50000,
     power: 180,
   },
+  {
+    level: 11,
+    name: 'Брат 67',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/c5a3ade6-3cee-4863-91d9-8d80b98eae3a.jpg',
+    threshold: 100000,
+    power: 300,
+  },
+  {
+    level: 12,
+    name: 'Братишка 52',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/0718e9ec-98dc-4274-ad2e-cd4efa32c4ed.jpg',
+    threshold: 200000,
+    power: 500,
+  },
+  {
+    level: 13,
+    name: 'SKIBIDI TOILET УЛЬТРА',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/eb0f7df6-9045-4144-bdc2-4781471b785a.jpg',
+    threshold: 400000,
+    power: 800,
+  },
+  {
+    level: 14,
+    name: 'Села и дала 👸',
+    image: 'https://cdn.poehali.dev/projects/537189a2-5499-448e-938e-d5577797daab/files/4b76835a-b67f-4cda-8987-2969a3cdbf4d.jpg',
+    threshold: 800000,
+    power: 1337,
+  },
 ];
 
 export function getLevelForScore(score: number): Level {
@@ -120,4 +148,9 @@ export const ACHIEVEMENTS: Achievement[] = [
   { id: 'lvl9', name: 'GIGA CHAD', desc: 'Достигни 9 уровня', icon: 'Shield', check: (s) => s.level >= 9 },
   { id: 'lvl10', name: 'SKIBIDI БОГ', desc: 'Достигни 10 уровня', icon: 'Sparkles', check: (s) => s.level >= 10 },
   { id: 'score50000', name: 'Мем-Вселенная', desc: '50 000 очков', icon: 'Infinity', check: (s) => s.score >= 50000 },
+  { id: 'lvl11', name: 'Брат 67', desc: 'Достигни 11 уровня', icon: 'Music', check: (s) => s.level >= 11 },
+  { id: 'lvl12', name: 'Братишка 52', desc: 'Достигни 12 уровня', icon: 'Radio', check: (s) => s.level >= 12 },
+  { id: 'lvl13', name: 'SKIBIDI УЛЬТРА', desc: 'Достигни 13 уровня', icon: 'Bomb', check: (s) => s.level >= 13 },
+  { id: 'lvl14', name: 'ФИНАЛЬНЫЙ БОСС', desc: 'Достигни 14 уровня', icon: 'Heart', check: (s) => s.level >= 14 },
+  { id: 'score800000', name: 'МЕМ-АБСОЛЮТ', desc: '800 000 очков', icon: 'Globe', check: (s) => s.score >= 800000 },
 ];
